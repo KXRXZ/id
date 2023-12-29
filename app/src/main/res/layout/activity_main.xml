@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_background">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center">
+
+        <TextView
+            android:id="@+id/textOneStep"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:textStyle="bold"
+            android:text="One step away to your account"
+            android:textColor="@color/white"
+            android:layout_marginBottom="16dp" />
+
+        <TextView
+            android:id="@+id/textNowVerify"
+            android:layout_below="@id/textOneStep"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/white"
+            android:text="Now we need to verify your identity." />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_below="@id/textNowVerify"
+            android:layout_width="wrap_content"
+            android:layout_height="349dp"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/id" />
+
+        <Button
+            android:id="@+id/captureButton"
+            android:layout_below="@id/imageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="Capture Image"
+            android:layout_marginTop="16dp" />
+
+        <Button
+            android:id="@+id/galleryButton"
+            android:layout_below="@id/captureButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="Select from Gallery"
+            android:layout_marginTop="16dp" />
+    </RelativeLayout>
+
+</FrameLayout>
